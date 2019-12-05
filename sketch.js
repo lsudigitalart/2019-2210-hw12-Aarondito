@@ -8,101 +8,17 @@ function setup() {
 }
 
 function draw() {
-    background(3);
+   background(0,0,35,25); 
+ //space
+   var galaxy = { 
+   locationX : random(width),
+   locationY : random(height),
+   size : random(3,6)
+ }
+   ellipse(mouseX ,mouseY, galaxy.size, galaxy.size);
+   ellipse(galaxy.locationX ,galaxy.locationY, galaxy.size, galaxy.size);
+ 
 
-    
-     
-    noStroke();
-    fill(255);
-    ellipse(27, 100, 7, 7);
-  
-   
-    noStroke();
-    fill(255);
-    ellipse(15, 725, 7, 7);
-     
-    noStroke();
-    fill(255);
-    ellipse(700, 715, 7, 7);
-   
-    noStroke();
-    fill(255);
-    ellipse(750, 700, 7, 7); 
-
-    noStroke();
-    fill(255);
-    ellipse(27, 715, 7, 7);
-
-     
-    noStroke();
-    fill(255);
-    ellipse(715, 25, 7, 7);
-     
-    noStroke();
-    fill(255);
-    ellipse(605, 100, 7, 7);
-
-     
-    noStroke();
-    fill(255);
-    ellipse(575, 255, 7, 7);
-
-     
-    noStroke();
-    fill(255);
-    ellipse(589, 600, 7, 7);
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-   
-    noStroke();
-    fill(255);
-    ellipse(27, 700, 7, 7);
-  
-  
-    
-    noStroke();
-    fill(255);
-    ellipse(98, 398, 7, 7);
-   
-    noStroke();
-    fill(255);
-    ellipse(400, 400, 7, 7);
-  
-   
-    noStroke();
-    fill(255);
-    ellipse(10, 686, 7, 7);
-  
-   
-    noStroke();
-    fill(255);
-    ellipse(365, 599, 7, 7);
-  
-   
-    noStroke();
-    fill(255);
-    ellipse(39, 200, 7, 7);
-  
-   
-    noStroke();
-    fill(255);
-    ellipse(2, 100, 7, 7);
-  
-  
-  
-          
   
           
   invasion++;
